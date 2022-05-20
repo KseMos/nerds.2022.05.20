@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8">
+  <title>дизайн-студия Нёрдс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="32.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="page-body">
+  <header class="main-header">
+
+    <nav class="main-navigation">
+
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" alt="Логотип студии Нердс" width="159" height="65">
+      </a>
+
+      <ul class="site-navigation">
+        <li><a href="blank.html">студия</a></li>
+        <li><a href="blank.html">клиенты</a></li>
+        <li><a href="catalog.html">магазин</a></li>
+        <li><a href="blank.html">контакты</a></li>
+      </ul>
+
+      <div class="site-navigation">
+        <a href="catalog/blank.html" class="basket-link"><img src="img/cart-icon.svg" alt="Корзина" width="15"
+            height="15"> корзина</a>
+      </div>
+
+
+
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <h1>магазин готовых шаблонов</h1>
+
+    <section class="choice">
+      <h2>условия выбора</h2>
+
+      <form action="https://echo.htmlacademy.ru/" method="post" class="choice-form">
+        <p class="choice-text">стоимость</p>
+        <p class="choice-cost">
+          <input type="range" min="0" max="150000" step="1">
+          <label> от <input type="text" value="0"></label>
+          <label> до <input type="text" value="150000"></label>
+        </p>
+
+        <p class="choice-text">сетка</p>
+        <p class="choice-grid">
+          <input type="radio" name="chooseform_grid" value="adapt" id="chooseform_grid_adapt" checked>
+          <label for="chooseform_grid_adapt">Адаптивная</label>
+        </p>
+        <p class="choice-grid">
+          <input type="radio" name="chooseform_grid" value="fix" id="chooseform_grid_fix">
+          <label for="chooseform_grid_fix">Фиксированная</label>
+        </p>
+        <p class="choice-grid">
+          <input type="radio" name="chooseform_grid" value="stretch" id="chooseform_grid_stretch">
+          <label for="chooseform_grid_stretch">Резиновая</label>
+        </p>
+
+        <p class="choice-text">особенности</p>
+        <p class="choice-spetial">
+          <input type="checkbox" name="chooseform_spetial_slider" id="slider">
+          <label for="slider">Слайдер</label>
+        </p>
+        <p class="choice-spetial">
+          <input type="checkbox" name="chooseform_spetial_advantage" id="advantage">
+          <label for="advantage">Блок преимуществ</label>
+        </p>
+        <p class="choice-spetial">
+          <input type="checkbox" name="chooseform_spetial_news" id="news">
+          <label for="news">Новости</label>
+        </p>
+        <p class="choice-spetial">
+          <input type="checkbox" name="chooseform_spetial_gallery" id="gallery">
+          <label for="gallery">Галерея</label>
+        </p>
+        <p class="choice-spetial">
+          <input type="checkbox" name="chooseform_spetial_basket" id="basket">
+          <label for="basket">Корзина</label>
+        </p>
+        <p><button type="submit" class="button button-spetial">Показать </button></p>
+      </form>
+    </section>
+
+
+    <section class="sort">
+      <h2>выбор шаблона</h2>
+      <p class="choice-text">Сортировать:</p>
+      <ul class="sort-list">
+        <li class="sort-item">по цене</li>
+        <li class="sort-item">по типу</li>
+        <li class="sort-item">по названию</li>
+      </ul>
+      <a href="#" class="sort-choise"><img src="img/README" alt="сортировка по возрастанию" width="11"
+          height="10">вверх</a>
+      <a href="#" class="sort-choise"><img src="img/README" alt="сортировка по убыванию" width="11" height="10">вниз</a>
+    </section>
+
+    <section class="showcase">
+      <h2>варианты работ</h2>
+      <ul class="showcase-list">
+        <li class="showcase-item">
+          <h3>Sedona</h3>
+          <p><img src="img/catalog/Sedona.jpg" alt="Sedona" width="358" height="578"></p>
+          <p>Информационный сайт для туристов</p>
+          <button type="button">9900 Р</button>
+
+        </li>
+        <li class="showcase-item">
+          <h3>Pink App</h3>
+          <p><img src="img/catalog/Pink.jpg" alt="Приложение PinkAPP" width="358" height="578"></p>
+          <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+          <button type="button">9900 Р</button>
+
+        </li>
+        <li class="showcase-item">
+          <h3>Borodinski</h3>
+          <p><img src="img/catalog/borodinsky.jpg" alt="Borodinski" width="358" height="578"></p>
+        </li>
+        <li class="showcase-item">
+          <h3>Милые штуки ручной работы для дома</h3>
+          <p><img src="img/catalog/mishka.jpg" alt="Милые штуки ручной работы для дома" width="358" height="578"></p>
+        </li>
+        <li class="showcase-item">
+          <h3>Учебный центр</h3>
+          <p><img src="img/catalog/study.jpg" alt="Учебный центр A+" width="358" height="578"></p>
+        </li>
+        <li class="showcase-item">
+          <h3>Кваст</h3>
+          <p><img src="img/catalog/kvast.jpg" alt="Крафтовое пиво Кваст" width="358" height="578"></p>
+          <p>Промо-сайт производителя<br>крафтового кваса</p>
+          <button type="button">9900 Р</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page-nav">
+      <h3>постраничная навигация</h3>
+      <ul class="page-nav-list">
+        <li class="page-nav-item"><a href="blank.html">1</a></li>
+        <li class="page-nav-item"><a href="blank.html">2</a></li>
+        <li class="page-nav-item"><a href="blank.html">3</a></li>
+        <li class="page-nav-item"><a href="blank.html" class="button button-next">следующая</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="main-footer">
+
+    <section class="footer-contacts">
+      <h2>контактная информация</h2>
+      <p>NЁRDS DESIGN STUDIO</p>
+      <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург<br><br><a href="tel:+78005558628" class="contacts-phone">+7
+          800 555-86-28</a></p>
+      <p><a href="popup_window/index.html" class="button contacts-button">НАПИШИТЕ НАМ</a></p>
+      <img src="img/map_1.svg" width="1440" height="416" alt="карта">
+    </section>
+
+    <section class="footer-social">
+      <h3>ссылки в соцсетях</h3>
+      <ul>
+        <li><a href="" class="social-button"><img src="img/social/vk-icon.svg" alt="VKlink" width="26" height="15"></a>
+        </li>
+        <li><a href="" class="social-button"><img src="img/social/fb-icon.svg" alt="FBlink" width="12" height="22"></a>
+        </li>
+        <li><a href="" class="social-button"><img src="img/social/insta-icon.svg" alt="Instalink" width="21"
+              height="21"></a></li>
+      </ul>
+
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из<br> социальных сетей</p>
+    </section>
+  </footer>
+
+</body>
+
+</html>
