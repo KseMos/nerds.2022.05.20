@@ -16,34 +16,28 @@
 
 <body class="page-body">
   <header class="main-header">
-
     <nav class="main-navigation">
-
       <a class="main-header-logo">
         <img src="img/nerds-logo.svg" alt="Логотип студии Нердс" width="159" height="65">
       </a>
-
       <ul class="site-navigation">
-        <li><a href="blank.html">студия</a></li>
+        <li><a href="index.html">студия</a></li>
         <li><a href="blank.html">клиенты</a></li>
         <li><a href="catalog.html">магазин</a></li>
         <li><a href="blank.html">контакты</a></li>
       </ul>
-
-      <div class="site-navigation">
-        <a href="catalog/blank.html" class="basket-link"><img src="img/cart-icon.svg" alt="Корзина" width="15"
-            height="15"> корзина</a>
-
-      </div>
-
-      <h1>Магазин готовых шаблонов</h1>
-
+      <ul class="site-navigation-basket">
+        <li>
+          <a href="catalog/blank.html" class="basket-link">
+            <img src="img/cart-icon.svg" alt="Корзина" width="15" height="15"></a>
+        </li>
+        <li><a href="catalog/blank.html" class="basket-link">корзина</a></li>
+      </ul>
     </nav>
+    <h1>Магазин готовых шаблонов</h1>
   </header>
 
-  <main class="container">
-
-
+  <main class="page-catalog container">
 
     <section class="choice">
       <h2>условия выбора</h2>
@@ -56,62 +50,54 @@
             <label> от <input type="text" value="0"></label>
             <label> до <input type="text" value="150000"></label>
           </li>
-        </ul>
 
-        <h3>сетка</h3>
-        <ul>
+          <h3>сетка</h3>
+
           <li class="choice-grid">
             <input type="radio" name="chooseform_grid" value="adapt" id="chooseform_grid_adapt" checked
               class="choice-grid-input">
             <label for="chooseform_grid_adapt">Адаптивная</label>
           </li>
-        </ul>
-        <ul>
+
           <li class="choice-grid">
             <input type="radio" name="chooseform_grid" value="fix" id="chooseform_grid_fix" class="choice-grid-input">
             <label for="chooseform_grid_fix">Фиксированная</label>
           </li>
-        </ul>
-        <ul>
+
           <li class="choice-grid">
             <input type="radio" name="chooseform_grid" value="stretch" id="chooseform_grid_stretch"
               class="choice-grid-input">
             <label for="chooseform_grid_stretch">Резиновая</label>
           </li>
-        </ul>
 
-        <h3>особенности</h3>
-        <ul>
+
+          <h3>особенности</h3>
+
           <li class="choice-spetial">
             <input type="checkbox" name="chooseform_spetial_slider" id="slider">
             <label for="slider">Слайдер</label>
           </li>
-        </ul>
-        <ul>
+
           <li class="choice-spetial">
             <input type="checkbox" name="chooseform_spetial_advantage" id="advantage">
             <label for="advantage">Блок преимуществ</label>
           </li>
-        </ul>
-        <ul>
+
           <li class="choice-spetial">
             <input type="checkbox" name="chooseform_spetial_news" id="news">
             <label for="news">Новости</label>
           </li>
-        </ul>
-        <ul>
+
           <li class="choice-spetial">
             <input type="checkbox" name="chooseform_spetial_gallery" id="gallery">
             <label for="gallery">Галерея</label>
           </li>
-        </ul>
-        <ul>
+
           <li class="choice-spetial">
             <input type="checkbox" name="chooseform_spetial_basket" id="basket">
             <label for="basket">Корзина</label>
           </li>
-        </ul>
-        <ul>
+
           <li>
             <button type="submit" class="button button-spetial">Показать </button>
           </li>
@@ -132,11 +118,9 @@
           height="10">вверх</a>
       <a href="#" class="sort-choise"><img src="img/sort-triangle-up.svg" alt="сортировка по возрастанию" width="11"
           height="10">вниз</a>
-    </section>
 
-    <section class="showcase">
       <h2>варианты работ</h2>
-      <ul class="showcase-list">
+      <ul class="showcase showcase-list">
         <li class="showcase-item">
 
           <p><img src="img/catalog/Sedona.jpg" alt="Sedona" width="358" height="578"></p>
@@ -195,17 +179,18 @@
     <section class="footer-social">
       <h3>ссылки в соцсетях</h3>
       <ul class="footer-social-list">
-        <li ><a href="" class="social-button"><img src="img/social/vk-icon.svg" alt="VKlink" width="26" height="15"></a>
-      </li>
+        <li><a href="" class="social-button"><img src="img/social/vk-icon.svg" alt="VKlink" width="26" height="15"></a>
+        </li>
         <li><a href="" class="social-button"><img src="img/social/fb-icon.svg" alt="FBlink" width="12" height="22"></a>
         </li>
         <li><a href="" class="social-button"><img src="img/social/insta-icon.svg" alt="Instalink" width="21"
               height="21"></a></li>
+        <li>
+          <p class=" footer-discount-offer">Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </li>
       </ul>
     </section>
-    <section class="footer-discount">
-      <p class="footer-discount-offer">Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из<br> социальных сетей</p></section>
   </footer>
 
   <section class="modal-showcase">
