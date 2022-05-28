@@ -30,50 +30,34 @@
         <li><a href="blank.html">контакты</a></li>
       </ul>
 
-      <div class="site-navigation">
-        <a href="catalog/blank.html" class="basket-link"><img src="img/cart-icon.svg" alt="Корзина" width="15"
-            height="15"> корзина</a>
-      </div>
+      <ul class="site-navigation-basket">
+        <li>
+          <a href="catalog/blank.html" class="basket-link">
+            <img src="img/cart-icon.svg" alt="Корзина" width="15" height="15"></a>
+        </li>
+        <li><a href="catalog/blank.html" class="basket-link">корзина</a></li>
+      </ul>
     </nav>
   </header>
 
   <main class="container">
+
     <section class="feature">
       <h1>Страница дизайн-студии Нёрдс</h1>
       <h2>преимущества</h2>
       <!--первый слайдер-->
-      <h3>
-        Долго, дорого, <br> скрупулезно.
-      </h3>
-      <p>
-        Математически выверенный дизайн <br>
-        для вашего сайта или мобильного приложения.
-      </p>
-      <button class="button feature-button">Узнать больше</button>
-      <img src="img/nerds-index-slide1O.png" alt="Студия_Нёрдс_слайд_1" width="760" height="431">
+      <div class="feature-list">
+        <h3 class="feature-list-slogan">Долго, дорого, <br> скрупулезно.</h3>
+        <p class="feature-list-text">Математически выверенный дизайн <br>
+          для вашего сайта или мобильного приложения.</p>
+        <button class="button feature-button">Узнать больше</button>
+        <img class="feature-list-img" src="img/nerds-index-slide1O.png" alt="Студия_Нёрдс_слайд_1" width="760"
+          height="431">
+
+      </div>
       <!--первый слайдер-->
 
-      <!--второй слайдер-->
-      <h3>
-        Любим математику <br> как никто другой
-      </h3>
-      <p>
-        Никакого креатива, только математические формулы <br> для расчета идеальных пропорций.
-      </p>
-      <button class="button feature-button">Узнать больше</button>
-      <img src="img/nerds-index-slide2o.png" alt="Студия_Нёрдс_слайд_2" width="760" height="431">
-      <!--второй слайдер-->
 
-      <!--третий слайдер-->
-      <h3>
-        Только ночь <br> только хардкор
-      </h3>
-      <p>
-        Работать днём, как все? мы против этого.<br> Ближе к полуночи работа только начинается.
-      </p>
-      <button class="button feature-button">Узнать больше</button>
-      <img src="img/nerds-index-slide3o.png" alt="Студия_Нёрдс_слайд_3" width="760" height="431">
-      <!--третий слайдер-->
     </section>
 
     <section class="product">
@@ -141,11 +125,11 @@
       <ul class="clients-list">
         <li class="clients-items"><a href="https://htmlacademy.ru/intensive/htmlcss"><img
               src="img/portfolio_logo/logo_htmlacademy_1.svg" alt="HTML academy" width="199" height="57"></a></li>
-        <li class="clients-items"><a><img src="img/portfolio_logo/logo-2_borodinski_1.svg" alt="Barbershop Borodinsky"
+        <li class="clients-items"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/portfolio_logo/logo-2_borodinski_1.svg" alt="Barbershop Borodinsky"
               width="209" height="90"></a></li>
-        <li class="clients-items"><a><img src="img/portfolio_logo/Group_pink_12.svg" alt="Pink" width="185"
+        <li class="clients-items"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/portfolio_logo/Group_pink_12.svg" alt="Pink" width="185"
               height="52"></a></li>
-        <li class="clients-items"><a><img src="img/portfolio_logo/logo-4_mishka_1.svg" alt="Mishka" width="173"
+        <li class="clients-items"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/portfolio_logo/logo-4_mishka_1.svg" alt="Mishka" width="173"
               height="84"></a></li>
       </ul>
     </section>
@@ -174,11 +158,9 @@
         </li>
         <li><a href="" class="social-button"><img src="img/social/insta-icon.svg" alt="Instalink" width="21"
               height="21"></a></li>
-      </ul>
-    </section>
-    <section class="footer-discount">
-      <p class=" footer-discount-offer">Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из<br> социальных сетей</p>
+      <li><p class=" footer-discount-offer">Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей</p></li>
+     </ul>
     </section>
   </footer>
 
@@ -196,7 +178,7 @@
       </p>
       <p>
         <label for="feedback_text" class="feedback-text">Текст письма</label>
-        <textarea name="feedback_text" id="feedback_text" rows="7">В свободной форме
+        <textarea name="feedback_text" id="feedback_text">В свободной форме
         </textarea>
       </p>
       <button type="submit" class="button feedback-button">отправить</button>
