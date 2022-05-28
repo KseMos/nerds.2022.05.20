@@ -19,7 +19,7 @@
   --basic-brown: #7E2222;
 }
 
-body {
+.page-body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -30,6 +30,11 @@ body {
   background-color: var(--basic-white);
   font-size: 16px;
   line-height: 24px;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -41,6 +46,14 @@ img {
   height: auto;
 }
 
+/*Grid*/
+
+.page {
+  height: 100%;
+}
+
+
+
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
@@ -48,6 +61,40 @@ img {
   background-color: var(--basic-grey-light);
   text-transform: uppercase;
   font-weight: 500;
+  display: grid;
+  grid-template-columns: 160px 1fr 115px;
+
+  padding: 0px;
+  width: 1160px;
+
+}
+
+.main-header {
+  margin-bottom: 0px;
+  background-color: var(--basic-grey-light);
+}
+
+
+.main-header-logo {
+
+  padding-top: 49px;
+
+}
+
+.site-navigation-basket {
+
+  padding: 0px;
+  list-style: none;
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: 15px min-content;
+  column-gap: 15px;
+}
+
+.main-footer {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+
 }
 
 .main-header h1 {
@@ -56,6 +103,14 @@ img {
 
 .site-navigation {
   list-style: none;
+
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content;
+  column-gap: 45px;
+  padding-left: 0px;
+  margin-top: 75px;
+  margin-left: 202px;
+
 }
 
 .site-navigation a {
@@ -71,11 +126,76 @@ img {
   color: var(--grey);
 }
 
-.feature {
-  background-color: var(--basic-grey-light);
+.site-navigation-basket a {
+  color: var(--basic-black);
 }
 
-.feature h3,
+.site-navigation-basket a:hover,
+.site-navigation-basket a:focus {
+  color: var(--basic-red);
+}
+
+.site-navigation-basket a:active {
+  color: var(--grey);
+}
+
+.container {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+  width: 1157px;
+  padding-right: 0px;
+  padding-top: 0px;
+  vertical-align: top;
+
+
+}
+
+.feature {
+  background-color: var(--basic-grey-light);
+  outline: 5px solid rgb(80, 70, 73);
+  outline-offset: -5px;
+  vertical-align: top;
+  padding: 0px;
+  margin-top: 0px;
+
+}
+
+.feature-list {
+  outline: 5px solid rgb(255, 0, 85);
+  outline-offset: -5px;
+  padding: 0px;
+  display: grid;
+  gap: 0px 0px;
+  grid-template-columns: auto 760px;
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas:
+    "slogan img"
+    "stext img"
+    "button img"
+}
+
+.feature-list-img {
+  grid-area: img;
+}
+
+
+.feature-list-slogan {
+  grid-area: slogan;
+}
+
+.feature-list-text {
+  grid-area: stext;
+  vertical-align: top;
+}
+
+.feature-button {
+  background-color: var(--basic-red);
+  width: 240px;
+  height: 50px;
+  grid-area: button;
+}
+
+.feature-list h3,
 .container h1 {
   font-size: 55px;
   line-height: 55px;
@@ -85,6 +205,11 @@ img {
 
 .product-list {
   list-style: none;
+ padding: 0px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 100px;
+
 }
 
 .product-item h3 {
@@ -106,13 +231,9 @@ img {
 
 
 
-.feature-button {
-  background-color: var(--basic-red);
-  width: 240px;
-  height: 50px;
-}
 
-product .feature-button:hover {
+
+.feature-button:hover {
   background-color: var(--basic-ruby);
 }
 
@@ -205,6 +326,10 @@ product .feature-button:hover {
 
 .clients-list {
   list-style: none;
+
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .contacts-phone {
@@ -218,9 +343,12 @@ product .feature-button:hover {
   font-size: 45px;
   line-height: 53px;
 }
-input[type="text"], [type="email"] {
+
+input[type="text"],
+[type="email"] {
   width: 100%;
   box-sizing: border-box;
+
 }
 
 .feedback-form input {
@@ -235,6 +363,7 @@ input[type="text"], [type="email"] {
   border: 1px solid var(--basic-grey-middle);
   width: 100%;
   box-sizing: border-box;
+
 }
 
 .feedback-form input:hover {
@@ -279,6 +408,11 @@ input[type="text"], [type="email"] {
 
 .footer-social-list {
   list-style: none;
+  outline: 5px solid rgb(71, 106, 134);
+  outline-offset: -5px;
+display: grid;
+grid-template-columns: 81px 81px 81px 1fr;
+column-gap: 9px;
 }
 
 .social-button {
