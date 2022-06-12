@@ -43,40 +43,44 @@
       <h1 class="visually-hidden">Страница дизайн-студии Нёрдс</h1>
       <h2 class="visually-hidden">преимущества</h2>
       <!--первый слайдер-->
-      <div class="feature-list">
-
-        <h3 class="feature-list-slogan">Долго, дорого, <br> скрупулезно.</h3>
-
-        <p class="feature-list-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <img class="feature-list-img" src="img/nerds-index-slide1O.png" alt="Студия_Нёрдс_слайд_1" width="760"
-          height="431">
-        <button class="button feature-button">Узнать больше</button>
+      <div class="slide">
+        <div class="feature-list">
+          <h3 class="feature-list-slogan">Долго, дорого, <br> скрупулезно.</h3>
+          <p class="feature-list-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <img class="feature-list-img" src="img/nerds-index-slide1O.png" alt="Студия_Нёрдс_слайд_1" width="760"
+            height="431">
+          <button class="button feature-button">Узнать больше</button>
+        </div>
       </div>
       <!--первый слайдер-->
-
       <!--второй слайдер-->
-      <div class="feature-list">
-
-        <h3 class="feature-list-slogan">Любим математику<br> как никто другой</h3>
-
-        <p class="feature-list-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.
-        </p>
-        <img class="feature-list-img" src="img/nerds-index-slide2O.png" alt="Студия_Нёрдс_слайд_2" width="760"
-          height="431">
-        <button class="button feature-button">Узнать больше</button>
+      <div class="slide">
+        <div class="feature-list slide">
+          <h3 class="feature-list-slogan">Любим математику<br> как никто другой</h3>
+          <p class="feature-list-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.
+          </p>
+          <img class="feature-list-img" src="img/nerds-index-slide2O.png" alt="Студия_Нёрдс_слайд_2" width="760"
+            height="431">
+          <button class="button feature-button">Узнать больше</button>
+        </div>
       </div>
-      <!--первый слайдер-->
-      <!--первый слайдер-->
-      <div class="feature-list">
-
-        <h3 class="feature-list-slogan">Только ночь, <br> только хардкор.</h3>
-
-        <p class="feature-list-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
-        </p>
-        <img class="feature-list-img" src="img/nerds-index-slide3O.png" alt="Студия_Нёрдс_слайд_3" width="760"
-          height="431">
-        <button class="button feature-button">Узнать больше</button>
+      <!--третий слайдер-->
+      <div class="slide-current">
+        <div class="feature-list slide">
+          <h3 class="feature-list-slogan">Только ночь, <br> только хардкор.</h3>
+          <p class="feature-list-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
+            начинается.
+          </p>
+          <img class="feature-list-img" src="img/nerds-index-slide3O.png" alt="Студия_Нёрдс_слайд_3" width="760"
+            height="431">
+          <button class="button feature-button">Узнать больше</button>
+        </div>
       </div>
+      <section class="slider-controls">
+        <button type="button" aria-label="Первый слайд"></button>
+        <button type="button" aria-label="Второй слайд"></button>
+        <button type="button" aria-label="Третий слайд"></button>
+      </section>
       <!--первый слайдер-->
     </section>
   </header>
@@ -177,6 +181,18 @@
   </main>
 
   <footer class="main-footer">
+
+      <h3 class="visually-hidden">как нас найти</h3>
+      <div style="position:relative;overflow:hidden;">
+        <a href="https://yandex.ru/maps/216/zelenograd/?utm_medium=mapframe&utm_source=maps"
+          style="color:#eee;font-size:12px;position:absolute;top:0px;">Зеленоград</a>
+        <a href="https://yandex.ru/maps/216/zelenograd/search/%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B5%D0%BA%D0%B8%20%D0%BA%D0%B0%D1%80%D0%BF%D0%BE%D0%B2%D0%BA%D0%B8%205%D0%BF/?from=tabbar&ll=37.175494%2C55.970193&sll=37.175494%2C55.970193&source=serp_navig&utm_medium=mapframe&utm_source=maps&z=14"
+          style="color:#eee;font-size:12px;position:absolute;top:14px;">Набережная реки Карповки, 5П на карте
+          Санкт‑Петербурга, ближайшее метро Петроградская — Яндекс Карты</a>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUJV4RFDB" width="100%" height="400" frameborder="1"
+          allowfullscreen="true" style="position:relative;"></iframe>
+      </div>
+
     <section class="footer-social">
       <h3 class="visually-hidden">ссылки в соцсетях</h3>
       <ul class="footer-social-list">
@@ -230,7 +246,6 @@
         </li>
       </ul>
     </section>
-
   </footer>
 
   <!--всплывающее окно-->
@@ -252,8 +267,18 @@
       </p>
       <button type="submit" class="button feedback-button">отправить</button>
     </form>
-
   </section>
+
+  <!--окно на карте с контактами-->
+  <section class="modal-contact">
+    <h3 class="visually-hidden">контактная информация</h3>
+    <h4>NЁRDS DESIGN STUDIO</h4>
+    <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург<br>
+    <a href="+78005558628">+7 800 555-86-28</a></p>
+    <button type="submit" class="button feedback-button">напишите нам</button>
+  </section>
+
+
 </body>
 
 </html>
