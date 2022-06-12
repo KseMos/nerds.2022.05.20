@@ -13,6 +13,7 @@
   --basic-dark-yellow: #E5A722;
   --basic-grey: #E1E1E1;
   --grey: #a5a5a5;
+  --basic-dove: #D5D5D5;
   --basic-grey-middle: #D7DCDE;
   --basic-grey-dark: #4D4D4D;
   --basic-antracit: #283136;
@@ -53,6 +54,7 @@
 
 a {
   text-decoration: none;
+  color: var(--basic-black);
 }
 
 img {
@@ -94,11 +96,11 @@ img {
   padding-top: 49px;
 }
 
-.main-header-logo a:hover {
-  opacity: 0.5;
+.main-header-logo:hover {
+  opacity: 0.7;
 }
 
-.main-header-logo a:focus {
+.main-header-logo:focus {
   opacity: 0.5;
 }
 
@@ -121,20 +123,37 @@ img {
   font-weight: 500;
 }
 
-.site-wrapper {
-  background-color: #00BC6C;
+
+.slider-controls button {
+  padding: 0;
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.container-slider {
-  width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+.slider-controls {
+  display: flex;
+  width: 67px;
+  justify-content: space-between;
+  margin: auto;
+
 }
 
 .slider-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
 }
 
 .site-navigation {
@@ -184,10 +203,10 @@ img {
   background-color: var(--basic-grey-light);
   width: 1157px;
   margin: auto;
+
 }
 
 .feature-list {
-
   background-color: var(--basic-grey-light);
   padding: 0px;
   display: grid;
@@ -214,6 +233,7 @@ img {
 
 .feature-list-text {
   grid-area: stext;
+  width: 416px;
 
 }
 
@@ -239,6 +259,8 @@ img {
 
 .product {
   margin-bottom: 80px;
+  margin-top: 77px;
+  ;
 }
 
 .product-list {
@@ -472,14 +494,22 @@ input[type="text"],
   background-color: var(--basic-red);
   width: 259px;
   height: 50px;
-
 }
 
-.main-footer {
+.feedback-button:hover {
+  background-color: var(--basic-ruby);
+}
 
-  margin: auto;
+.feedback-button:active {
+  background-color: var(--dark-red);
+  color: var(--basic-brown);
+}
+
+
+.main-footer {
+  width: 100%;
+  margin: 60px auto auto auto;
   padding: 0px;
-  width: 1157px;
 }
 
 .footer-contacts h3 {
@@ -501,19 +531,19 @@ input[type="text"],
 }
 
 .footer-social {
-
+  padding: 0px;
   margin: 0px;
+
 }
 
 
 .footer-social-list {
   list-style: none;
-
-  display: grid;
-  grid-template-columns: 81px 81px 81px auto;
-  column-gap: 9px;
-  margin: 75px 0 0;
-  vertical-align: top;
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  justify-content: center;
+  margin-top: 68px;
 }
 
 .social-footer-text {
@@ -914,39 +944,63 @@ input[type="text"],
   list-style: none;
   padding: 0px;
   margin: 0px;
-
-}
-
-.pagination-list a {
-  background-color: var(--basic-grey-light);
-  color: var(--basic-black);
-  padding: 15px 17px;
-  margin-right: 11px;
-  margin-top: 11px;
-  border-radius: 3px;
-
-}
-
-.pagination-list a:hover {
-  background-color: var(--basic-grey);
-}
-
-.pagination-list a:active {
-  background-color: var(--basic-grey-middle);
-  border-top: 3px solid var(--basic-grey-dark);
-  padding: 11px 17px 13px;
-
 }
 
 .pagination-item {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0px 8px 0px 0px;
+  padding: 17px 20px 17px 20px;
+  background-color: var(--basic-grey-light);
+  border-radius: 3px;
 }
 
-.pagination-current a {
+.pagination-item:hover{
+  background-color: var(--basic-grey-middle);
+}
 
+.pagination-item:active{
+  background-color: var(--basic-dove);
+  color: var(--basic-grey-dark);
+  border-top: 3px solid var(--basic-grey-dark);
+  outline-offset: -3px;
+}
+
+
+.pagination-item-letters {
+  background-color: var(--basic-grey-light);
+  padding: 17px 78px 17px 77px;
+}
+
+.pagination-current {
   background-color: var(--basic-white);
   outline: 3px solid var(--basic-grey-middle);
   outline-offset: -3px;
 
+}
+
+.modal-contact {
+  position: absolute;
+  width: 319px;
+  height: 278px;
+  padding: 49px 0px 0px 50px;
+  top: 3060px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.modal h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0px;
 }
