@@ -195,6 +195,13 @@ img {
   color: var(--basic-red);
 }
 
+.site-navigation-active {
+  text-decoration: underline;
+  text-decoration-color: var(--basic-ruby);
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
+}
+
 .site-navigation-basket a:active {
   color: var(--grey);
 }
@@ -572,6 +579,7 @@ justify-content: center;
 
 .social-button a:active{
   background-color: #D7373B;
+  opacity: 0.3;
 }
 
 
